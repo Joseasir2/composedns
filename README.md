@@ -13,3 +13,16 @@ ports:: Mapea los puertos del contenedor al host del sistema. Por ejemplo, puede
 volumes:: Permite montar volúmenes en el contenedor. Los volúmenes son áreas de almacenamiento fuera del sistema de archivos del contenedor, lo que permite persistir datos incluso después de que el contenedor se detenga o se elimine.
 
 environment:: Define variables de entorno que se pasarán al contenedor. Estas variables pueden incluir configuraciones específicas de la aplicación, como credenciales de base de datos o configuraciones de la aplicación.
+
+
+## Pruebas
+
+Para poder hacer pruebas necesitamos instalar dentro del contenedor "dig".
+
+Nos metemos dentro del contenedor
+$ docekr exec -it [nombre del contenedor] bash
+**Attach shell**
+
+
+$ apt update
+$ apt install -y dnsutils
